@@ -26,28 +26,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="startClicked"
-        android:text="Start"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="116dp"
+        android:onClick="T"
+        android:text="Activate"
+        app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.126" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Button02"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="startClicked"
-        android:text="Start"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="286dp"
+        android:layout_height="478dp"
+        android:onClick="Tt"
+        android:src="@drawable/ninetydegree"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="299dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Calculating your posture!!"
+        android:textColor="#070202"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

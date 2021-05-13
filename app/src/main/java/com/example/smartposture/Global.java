@@ -7,4 +7,5 @@ public class Global {
     public static float x;
     public static float y;
     public static float z;
+
 }

@@ -39,6 +39,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -46,6 +47,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Objects;
 
 import static com.example.smartposture.Global.btn1;
@@ -93,11 +97,24 @@ public class MainActivity extends AppCompatActivity implements OnNavigationItemS
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         lastUpdate = System.currentTimeMillis();
-        Global.btn1 = findViewById(R.id.Button01);
-        Global.btn2 = findViewById(R.id.Button02);
+
 
     }
 
+
+    public void T(View view)
+    {
+        Toast.makeText(this, "App is activated!", Toast.LENGTH_SHORT).show();
+    }
+    public void Tt(View view)
+    {
+        Date currentTime = Calendar.getInstance().getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("hh.mm.ss aa");
+        String output = dateFormat.format(currentTime);
+      //  Toast.makeText(getApplicationContext(),"Time Is :" + output, Toast.LENGTH_LONG).show();
+       Toast.makeText(this, "Improper posture!!", Toast.LENGTH_SHORT).show();
+
+    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
